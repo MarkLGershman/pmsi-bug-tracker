@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainTheme.master.cs" Inherits="PMSI.MainTheme" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Home.css">
+    
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <div class="upper-navigation">
+        <ul class="upper-nav-s">
+            <li>   <a href="/Index.aspx"> LogOut     </a> </li>
+          
+            <li>
+                <a href="/Dashboard.aspx">     Dashboard   </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="sidebar-container">
+        <div class="sidebar-logo">
+            logo
+        </div>
+        <ul class="sidebar-navigation">
+            <li class="header">CompanyName</li>
+            <li>
+                <a href="/Dashboard.aspx">
+                    <i class="fa fa-home" aria-hidden="true"></i> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="/Projects.aspx">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i> Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="/Bugs.aspx">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i> Bugs/Issues
+                </a>
+            </li>
+
+            <li>
+                <a href="/AddPeople.aspx">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i> People
+                </a>
+            </li>
+            <li class="header"></li>
+            
+        </ul>
+    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+      
+  <script src="vendor/jquery/jquery.min.js"></script>
+</body>
+</html>
